@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale =1.0">
+        <title>Adithya Swaminathan</title>
+        <link rel = "shortcut icon" type = "image/png" href = "assets/PortfolioLogo.png">
+        <link rel = "stylesheet" href = "style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script defer src = "main.js"></script>
+        <script src = "projectSection.js"></script>
+    </head>
+    <body>
+        <nav id = "top-navbar" class = "navbar">
+            <div class = "top-bar">
+                <div class = "logo"><img src="assets/PortfolioLogo.png" id = "top-logo"></div>
+                <ul class = "top-menu">
+                    <li><a href = "#home">HOME</a></li>
+                    <li><a href = "#about">ABOUT</a></li>
+                    <li><a href = "#projects">PROJECTS</a></li>
+                    <li><a href = "#resume">RESUME</a></li>
+                    <li><a href = "#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+        <section class = "home" id = "home">
+            <div class = "home-page">
+                <div class = "home-content">
+                    <div class = "text-1">Hey there, I'm</div>
+                    <span class = "text-2"></span>
+                    <div class = "text-3">I'm an University of Illinois student delving into how technology impacts our lifestyle.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "about" id = "about">
+            <div class = "about-page">
+                <div class = "about-header">
+                    <h3>About Me</h3>
+                </div>
+                <div class = "about-holder">
+                    <div class = "about-content">
+                        <p>I'm a CS + Math major at <span id = "uiuc">UIUC.</span></p><br>
+                        <p>Why CS + Math? That's because those are my two academic passions. Some say math is a language.
+                            The way one can express complex statements in math has lead me to believe that this is true.
+                            Math is a way to express the realm of numbers, and computer science draws very heavily upon that fact.
+                            Computer science is prevalent in anything and everything in this increasingly 
+                            technology-driven world. Therefore, those that are coming up learning this powerful
+                        tool that is the development of technology are the future.</p><br>
+                        <p>Other than coding, I am a huge Los Angeles Lakers fan (and just a basketball fan in general).
+                            Furthermore, during this COVID-19 pandemic, I discovered weightlifting, which has become as much
+                            of a passion for me as programming has.</p><br>
+                    </div>
+                    <div class = "about-image">
+                        <img src="assets/me.png" id = "me">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "projects" id = "projects">
+            <div class = "projects-page">
+                <div class = "project-header">
+                    <h3>My Projects</h3>
+                </div>
+                <h2>Scroll through my notable projects below!</h2>
+                <div class = "project-container" id = "proj-container">
+                    <script>addProjectCards()</script>
+                </div>
+                <h2>To see the rest of my projects, be sure to visit my <a href = "https://github.com/adiswami14">Github</a>!</h2>
+            </div>
+        </section>
+
+        <section class = "resume" id = "resume">
+            <div class = "resume-page">
+                <div class = "resume-header">
+                    <h3>My Resume</h3>
+                </div>
+                <div class = "resume-content">
+                    <iframe src="assets/resume.pdf"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class = "contact" id = "contact">
+            <div class = "contact-page">
+                <div class = "contact-header">
+                    <h3>Contact Me!</h3>
+                </div>
+                <div class = "contact-content">
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
