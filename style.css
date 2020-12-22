@@ -409,11 +409,24 @@ iframe {
     margin-left: 1vw;
 }
 
-.email-joiner a{
+
+.sm-joiner {
+    direction: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email-joiner a,
+.sm-joiner i{
     color: darkblue;
 }
 
-.email-joiner a:hover {
+.email-joiner a:hover,
+.sm-joiner i:hover {
     color: turquoise;
     animation: rotation 0.5s ease;
+}
+
+.sm-joiner i {
+    margin: auto 1vw auto 1vw;
 }
