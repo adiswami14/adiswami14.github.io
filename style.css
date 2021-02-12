@@ -245,9 +245,11 @@ body {
 .projects .project-container {
     display: flex;
     align-self: center;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    align-self: center;
     max-width: 100%;
+    padding: 10px;
     margin: 40px 0;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -270,7 +272,7 @@ body {
     border: solid 10px;
     border-radius: 15%;
     border-color: white;
-    margin: 18px;
+    margin: 15px;
     box-shadow: inset 5px 5px 5px rgba(215, 104, 230, 0.486),
                 inset -5px -5px 5px rgba(255, 255, 255, 0.5),
                 5px 5px 5px rgba(215, 104, 230, 0.486),

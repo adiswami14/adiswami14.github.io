@@ -1,13 +1,11 @@
 function addProjectCards() {
     var projectcontainer = document.getElementById("proj-container");
-    $.getJSON('https://api.github.com/users/adiswami14/repos', function(data) {
+    $.getJSON('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=adiswami14', function(data) {
         for(let i =0; i< data.length; i++) {
-            if(!data[i].fork && data[i].size>=10) {
-                var card = document.createElement("div");
-                card.className = "card";
-                createCard(data[i], card);
-                projectcontainer.appendChild(card);
-            }
+          var card = document.createElement("div");
+          card.className = "card";
+          createCard(data[i], card);
+          projectcontainer.appendChild(card);
         }
     });
   }
@@ -20,8 +18,8 @@ function addProjectCards() {
 
     var proj_name = document.createElement("h3");
     var anchor_link = document.createElement("a");
-    anchor_link.href = data.html_url;
-    anchor_link.innerHTML = formatName(data.name);
+    anchor_link.href = data.link;
+    anchor_link.innerHTML = formatName(data.repo);
     cardcontent.appendChild(proj_name);
 
     var desc = document.createElement("p");
